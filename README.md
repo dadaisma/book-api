@@ -1,3 +1,30 @@
+This is a simple Express.js application for managing books.
+
+## Files
+
+- `index.ts`: This is the main entry point for the application. It sets up the Express server, applies middleware, and starts the server.
+
+- `bookController.ts`: This file contains the controller functions for handling book-related requests.
+
+- `bookRoutes.ts`: This file defines the routes for book-related requests and associates them with the appropriate controller functions.
+
+## Endpoints
+
+- `GET /api/books/:id`: This endpoint returns the book with the specified ID. If the book is not found, it returns a 404 status code with a message.
+
+- `GET /api/books/year/:year`: This endpoint returns all books published in the specified year. If no books are found, it returns a 404 status code with a message.
+
+- `GET /api/books/author/:author`: This endpoint returns all books written by the specified author. If no books are found, it returns a 404 status code with a message.
+
+- `GET /api/books/title/:title`: This endpoint returns all books with the specified title. If no books are found, it returns a 404 status code with a message.
+
+- `PUT /api/books/:id`: This endpoint updates the book with the specified ID with the properties in the request body. If the book is not found, it returns a 404 status code with a message.
+
+- `DELETE /api/books/:id`: This endpoint deletes the book with the specified ID. If the book is not found, it returns a 404 status code with a message.
+
+Each endpoint uses the parameters in the URL to find or filter books. The `PUT /api/books/:id` endpoint also uses the properties in the request body to update the book.
+
+
 # index.ts
 
 This is the main entry point for the Express server.
