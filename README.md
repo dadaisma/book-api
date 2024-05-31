@@ -18,6 +18,8 @@ This is a simple Express.js application for managing books.
 
 - `GET /api/books/title/:title`: This endpoint returns all books with the specified title. If no books are found, it returns a 404 status code with a message.
 
+- `POST /api/books`: This endpoint creates a new book with the properties in the request body and adds it to the books array.
+
 - `PUT /api/books/:id`: This endpoint updates the book with the specified ID with the properties in the request body. If the book is not found, it returns a 404 status code with a message.
 
 - `DELETE /api/books/:id`: This endpoint deletes the book with the specified ID. If the book is not found, it returns a 404 status code with a message.
